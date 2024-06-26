@@ -1,9 +1,10 @@
+package org.example;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.example.StoreService;
 
 import java.util.List;
 
@@ -26,7 +27,7 @@ public class StoreServiceJUnitTest {
     }
 
     @Test
-    @DisplayName("Test createCheck method")
+    @DisplayName("Test createCheck with wrong sale method")
     void testCreateCheck() {
         assumeFalse(storeService == null);
         assumeFalse(storeService.getProduct("Apple") == null);
